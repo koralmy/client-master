@@ -28,9 +28,9 @@ import CreateCardPage from "../cards/pages/CreateCardPage";
 import EditCardPage from "../cards/pages/EditCardPage";
 import FavCardsPage from "../cards/pages/FavCardsPage";
 
-const Router = () => {
+const Router  = () => {
   return (
-    <Routes>
+    <Routes basename="/client-master">
       <Route path={ROUTES.FAV_CARDS} element={<FavCardsPage />}></Route>
       <Route path={ROUTES.CREATE_CARD} element={<CreateCardPage />}></Route>
       <Route path={ROUTES.MY_CARDS} element={<MyCardsPage />}></Route>
