@@ -1,5 +1,5 @@
 const ROUTES = {
-  CARDS: "/",
+  CARDS: "https://koralmy.github.io/client-master",
   ABOUT: "https://koralmy.github.io/client-master/about",
   MY_CARDS: "/my-cards",
   FAV_CARDS: "/fav-cards",
