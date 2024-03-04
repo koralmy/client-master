@@ -1,0 +1,25 @@
+{
+  "short_name": "buisnes card App",
+  "name": "buisnes cardapp for buisnes and clients",
+  "icons": [
+    {
+      "src": "./assets/images/buisnes-card.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./assets/images/buisnes-card.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/images/buisnes-card.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
