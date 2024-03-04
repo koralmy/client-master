@@ -1,7 +1,7 @@
 const ROUTES = {
-  CARDS: "/",
-  ABOUT: "/about",
-  MY_CARDS: "/my-cards",
+  CARDS: "https://koralmy.github.io/client-master",
+  ABOUT: "https://koralmy.github.io/client-master/about",
+  MY_CARDS: "https://koralmy.github.io/client-master/my-cards",
   FAV_CARDS: "/fav-cards",
   CARD_DETAILS: "/card-info",
   SANDBOX: "/sandbox",
