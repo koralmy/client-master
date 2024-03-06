@@ -64,12 +64,12 @@ const useCards = () => {
     }
   }, []);
 
-  const handleGetCard = useCallback(async (cardFromClient) => {
+  const handleGetCard = useCallback((cardFromClient, callback) => {
     try {
       setPending(true);
-      const card = await getCard(cardFromClient);
+      const card = getCard(cardFromClient);
       requestStatus(card, null, false, null);
-      return card;
+      return card.data;
     } catch (error) {
       requestStatus(null, null, false, error);
     }
@@ -134,8 +134,8 @@ const useCards = () => {
     try {
       setPending(true);
       const cards = await getCards();
-      const favCards = cards.filter(
-        (card) => !!card.likes.find((id) => id === user._id)
+      const favCards = cards.filter((card) =>
+        card.likes.find((id) => id === user._id)
       );
       requestStatus(null, favCards, false, null);
     } catch (error) {

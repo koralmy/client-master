@@ -13,6 +13,7 @@ const Input = ({
   error,
   handleChange,
   placeholder,
+  value,
   ...rest
 }) => {
   return (
@@ -24,7 +25,7 @@ const Input = ({
         type={type}
         id={name}
         name={name}
-        value={data[name] ? data[name] : ""}
+        value={value}
         required={required}
         helperText={error}
         error={Boolean(error)}

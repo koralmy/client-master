@@ -52,7 +52,7 @@ const MenuBar = ({ isMenuOpen, anchorEl, onCloseMenu }) => {
         aria-describedby="modal-modal-description"
       >
         <Box style={style}>
-          <EditProfile />
+          <EditProfile onClose={() => setIsModalOpen(false)} />
         </Box>
       </Modal>
       {user && (
