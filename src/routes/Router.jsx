@@ -28,60 +28,63 @@ import CreateCardPage from "../cards/pages/CreateCardPage";
 import EditCardPage from "../cards/pages/EditCardPage";
 import FavCardsPage from "../cards/pages/FavCardsPage";
 
-const Router  = () => {
+const Router = () => {
   return (
-    <Routes basename="/client-master">
-      <Route path={ROUTES.FAV_CARDS} element={<FavCardsPage />}></Route>
-      <Route path={ROUTES.CREATE_CARD} element={<CreateCardPage />}></Route>
-      <Route path={ROUTES.MY_CARDS} element={<MyCardsPage />}></Route>
-      <Route path={ROUTES.ABOUT} element={<AboutPage />}></Route>
-      <Route path={ROUTES.CARDS} element={<CardsPage />}></Route>
-      <Route
-        path={`${ROUTES.CARD_DETAILS}/:id`}
-        element={<CardDetailsPage />}
-      ></Route>
-      <Route
-        path={`${ROUTES.EDIT_CARD}/:id`}
-        element={<EditCardPage />}
-      ></Route>
-      <Route path={ROUTES.SIGNUP} element={<SignupPage />}></Route>
-      <Route path={ROUTES.LOGIN} element={<LoginPage />} />
+    <Routes>
+        <Route path={ROUTES.FAV_CARDS} element={<FavCardsPage />}></Route>
+        <Route path={ROUTES.CREATE_CARD} element={<CreateCardPage />}></Route>
+        <Route path={ROUTES.MY_CARDS} element={<MyCardsPage />}></Route>
+        <Route path={ROUTES.ABOUT} element={<AboutPage />}></Route>
+        <Route path={ROUTES.CARDS} element={<CardsPage />}></Route>
+        <Route
+          path={`${ROUTES.CARD_DETAILS}/:id`}
+          element={<CardDetailsPage />}
+        ></Route>
+        <Route
+          path={`${ROUTES.EDIT_CARD}/:id`}
+          element={<EditCardPage />}
+        ></Route>
+        <Route path={ROUTES.SIGNUP} element={<SignupPage />}></Route>
+        <Route path={ROUTES.LOGIN} element={<LoginPage />} />
 
-      <Route path={ROUTES.SANDBOX} element={<Sandbox />}>
-        <Route path="hooks" element={<HooksWrapper />}>
-          <Route path="set-posts" element={<SetPosts />}></Route>
-        </Route>
-        <Route path="life-cycle-hooks" element={<LifeCycleHooks />}>
-          <Route path="use-state" element={<UseStateCycle />}></Route>
-          <Route
-            path="useEffect-did-mount"
-            element={<UseEffectAsComponentDidMount />}
-          ></Route>
-          <Route
-            path="useEffect-did-update"
-            element={<UseEffectAsComponentDidUpdate />}
-          ></Route>
-          <Route
-            path="useEffect-will-unmount"
-            element={<UseEffectAsComponentWillUnmount />}
-          ></Route>
-          <Route
-            path="useEffect-did-update-no-deps"
-            element={<UseEffectNoDependencies />}
-          />
-        </Route>
-        <Route path="custom-hooks" element={<CustomHooks />}>
-          <Route path="custom-counter" element={<CustomCounterHook />}></Route>
-        </Route>
-        <Route path="memoization" element={<Memoization />}>
-          <Route path="use-callback" element={<UseCallBack />}></Route>
-          <Route path="use-memo" element={<UseMemo />}></Route>
-        </Route>
-        <Route path="loops" element={<Loops />}></Route>
-        <Route path="context" element={<A />}></Route>
-        <Route path="form" element={<FormTest />}></Route>
-      </Route>
+        <Route path={ROUTES.SANDBOX} element={<Sandbox />}>
+          <Route path="hooks" element={<HooksWrapper />}>
+            <Route path="set-posts" element={<SetPosts />}></Route>
+          </Route>
+          <Route path="life-cycle-hooks" element={<LifeCycleHooks />}>
+            <Route path="use-state" element={<UseStateCycle />}></Route>
+            <Route
+              path="useEffect-did-mount"
+              element={<UseEffectAsComponentDidMount />}
+            ></Route>
+            <Route
+              path="useEffect-did-update"
+              element={<UseEffectAsComponentDidUpdate />}
+            ></Route>
+            <Route
+              path="useEffect-will-unmount"
+              element={<UseEffectAsComponentWillUnmount />}
+            ></Route>
+            <Route
+              path="useEffect-did-update-no-deps"
+              element={<UseEffectNoDependencies />}
+            />
+          </Route>
+          <Route path="custom-hooks" element={<CustomHooks />}>
+            <Route
+              path="custom-counter"
+              element={<CustomCounterHook />}
+            ></Route>
+          </Route>
+          <Route path="memoization" element={<Memoization />}>
+            <Route path="use-callback" element={<UseCallBack />}></Route>
+            <Route path="use-memo" element={<UseMemo />}></Route>
+          </Route>
+          <Route path="loops" element={<Loops />}></Route>
+          <Route path="context" element={<A />}></Route>
+          <Route path="form" element={<FormTest />}></Route>
       <Route path="*" element={<ErrorPage />}></Route>
+    </Route>
     </Routes>
   );
 };

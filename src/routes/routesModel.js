@@ -1,5 +1,5 @@
 const ROUTES = {
-  CARDS: "/client-master",
+  CARDS: "/",
   ABOUT: "/about",
   MY_CARDS: "/my-cards",
   FAV_CARDS: "/fav-cards",

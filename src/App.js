@@ -17,7 +17,7 @@ import { UserProvider } from "./users/providers/UserProvider";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/client-master">
         <ThemeProvider>
           <SnackbarProvider>
             <UserProvider>
