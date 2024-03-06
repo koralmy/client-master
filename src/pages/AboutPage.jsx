@@ -29,7 +29,11 @@ const AboutPage = () => {
           alignSelf="center"
           sx={{ display: { md: "flex", xs: "none" }, justifyContent: "center" }}
         >
-          <img src="/assets/images/card.jpg" alt="card" width="100%" />
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/card.jpg"}
+            alt="card"
+            width="100%"
+          />
         </Grid>
       </Grid>
     </Container>

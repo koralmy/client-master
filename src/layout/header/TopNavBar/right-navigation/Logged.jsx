@@ -12,7 +12,10 @@ const Logged = () => {
         sx={{ p: 0, display: "inline-flex", marginLeft: 2 }}
         onClick={() => setOpen(true)}
       >
-        <Avatar alt="me" src="/assets/images/avater.png"></Avatar>
+        <Avatar
+          alt="me"
+          src={process.env.PUBLIC_URL + "/assets/images/avater.png"}
+        ></Avatar>
       </IconButton>
     </Tooltip>
   );
