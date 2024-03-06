@@ -25,7 +25,6 @@ const ErrorPage = () => {
         <Grid item xs={12} md={4} justifyContent="center">
           <img
             src={process.env.PUBLIC_URL + "/assets/images/broken-robot.png"}
-            // src="public\assets\images\broken-robot.png"
             alt="broken robot"
             width="100%"
           />
